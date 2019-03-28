@@ -18,6 +18,7 @@ window.onload = () => {
 		width: 480,
 		height: 800,
 		backgroundColor: '#fafafa',
+	  pixelArt: true,
 		physics: {
 			default: 'arcade',
 			arcade: {
