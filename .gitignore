@@ -1,0 +1,11 @@
+# System and IDE files
+
+package-lock.json
+# Vendors
+
+node_modules/
+
+
+# Build
+
+build/
