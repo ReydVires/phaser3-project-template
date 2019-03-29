@@ -35,6 +35,8 @@ window.onload = () => {
 
 	GameManager.height = config.height;
 	GameManager.width = config.width;
+	GameManager.heightCenter = config.height * .5;
+	GameManager.widthCenter = config.width * .5;
 	GameManager.emitter = new Phaser.Events.EventEmitter();
 };
 

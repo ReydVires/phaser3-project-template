@@ -14,6 +14,8 @@ class GameManager {
     this.signature = 'Ahmad Arsyel';
     this.height = 0;
     this.width = 0;
+    this.heightCenter = 0;
+    this.widthCenter = 0;
     this.emitter = null;
     // Private get set
     this._score = 0;

@@ -17,7 +17,7 @@ export default class SceneBoot extends Phaser.Scene {
       text: '',
       style: {
         font: '18px monospace',
-        fill: CONST.colors.white
+        fill: CONST.colors.black
       }
     })
     .setOrigin(.5);
@@ -27,7 +27,7 @@ export default class SceneBoot extends Phaser.Scene {
       text: '',
       style: {
         font: '18px monospace',
-        fill: CONST.colors.white
+        fill: CONST.colors.black
       }
     })
     .setOrigin(.5);
