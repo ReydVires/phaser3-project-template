@@ -6,8 +6,6 @@ import SceneBoot from './scenes/SceneBoot';
 let game;
 let scenes = [];
 
-// TODO: Add resize
-
 window.onload = () => {
 	scenes.push(SceneBoot);
 	scenes.push(SceneMain);
