@@ -16,7 +16,8 @@ window.onload = () => {
 		width: 480,
 		height: 800,
 		backgroundColor: '#fafafa',
-	  pixelArt: true,
+    pixelArt: true,
+    // zoom: 1.5,
     seed: Date.now(),
 		physics: {
 			default: 'arcade',
