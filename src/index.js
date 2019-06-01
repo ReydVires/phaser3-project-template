@@ -6,14 +6,14 @@ import SceneBoot from './scenes/SceneBoot';
 let game;
 let scenes = [];
 
-// TODO: Add resize
+// TODO: Add responsive resize
 
 window.onload = () => {
 	scenes.push(SceneBoot);
 	scenes.push(SceneMain);
 
 	let config = {
-		type: Phaser.CANVAS,
+		type: Phaser.WEBGL,
 		parent: 'phaser-game',
 		width: 480,
 		height: 800,
