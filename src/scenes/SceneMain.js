@@ -10,6 +10,7 @@ export default class SceneMain extends Phaser.Scene {
   create(){
     // Define our objects
     console.log(`Ready SceneMain! ${GameManager.signature}`);
+
     GameManager.emitter.on(
       'event:clickStart', this.clickStart.bind(this)
     );
@@ -17,7 +18,8 @@ export default class SceneMain extends Phaser.Scene {
     let startBtn = new SimpleButton(
       this,
       GameManager.width * .5,
-      GameManager.height * .3, 'logo',
+      GameManager.height * .3,
+      'logo',
       'event:clickStart'
     );
     startBtn.setScale(.5);
