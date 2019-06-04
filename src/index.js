@@ -18,7 +18,9 @@ window.onload = () => {
 		width: 480,
 		height: 800,
 		backgroundColor: '#fafafa',
-	  pixelArt: true,
+    pixelArt: true,
+    // zoom: 1.5,
+    seed: Date.now(),
 		physics: {
 			default: 'arcade',
 			arcade: {
@@ -35,6 +37,8 @@ window.onload = () => {
 
 	GameManager.height = config.height;
 	GameManager.width = config.width;
+	GameManager.heightCenter = config.height * .5;
+	GameManager.widthCenter = config.width * .5;
 	GameManager.emitter = new Phaser.Events.EventEmitter();
 };
 
