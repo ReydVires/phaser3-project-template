@@ -24,6 +24,6 @@
     "raw-loader": "^0.5.1"
   },
   "dependencies": {
-    "phaser": "^3.16.2"
+    "phaser": "^3.17.0"
   }
 }
