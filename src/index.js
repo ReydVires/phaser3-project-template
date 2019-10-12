@@ -18,9 +18,9 @@ window.onload = () => {
 		width: 480,
 		height: 800,
 		backgroundColor: '#fafafa',
-    pixelArt: true,
-    // zoom: 1.5,
-    seed: Date.now(),
+		pixelArt: true,
+		// zoom: 1.5,
+		seed: Date.now(),
 		physics: {
 			default: 'arcade',
 			arcade: {
@@ -32,8 +32,8 @@ window.onload = () => {
 	};
 	game = new Phaser.Game(config);
 	window.focus();
-  resize();
-  window.addEventListener("resize", resize, false);
+	resize();
+	window.addEventListener("resize", resize, false);
 
 	GameManager.height = config.height;
 	GameManager.width = config.width;
@@ -43,17 +43,17 @@ window.onload = () => {
 };
 
 function resize() {
-  let canvas = document.querySelector("canvas");
-  let windowWidth = window.innerWidth;
-  let windowHeight = window.innerHeight;
-  let windowRatio = windowWidth / windowHeight;
-  let gameRatio = game.config.width / game.config.height;
-  if(windowRatio < gameRatio){
-    canvas.style.width = windowWidth + "px";
-    canvas.style.height = (windowWidth / gameRatio) + "px";
-  }
-  else{
-    canvas.style.width = (windowHeight * gameRatio) + "px";
-    canvas.style.height = windowHeight + "px";
-  }
+	let canvas = document.querySelector("canvas");
+	let windowWidth = window.innerWidth;
+	let windowHeight = window.innerHeight;
+	let windowRatio = windowWidth / windowHeight;
+	let gameRatio = game.config.width / game.config.height;
+	if(windowRatio < gameRatio){
+		canvas.style.width = windowWidth + "px";
+		canvas.style.height = (windowWidth / gameRatio) + "px";
+	}
+	else{
+		canvas.style.width = (windowHeight * gameRatio) + "px";
+		canvas.style.height = windowHeight + "px";
+	}
 }
